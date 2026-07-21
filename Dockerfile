@@ -3,9 +3,10 @@ FROM denoland/deno:2.1.4 AS runner
 WORKDIR /app
 
 COPY deno.json ./
-RUN deno install
 
 COPY . .
+
+RUN deno install
 
 EXPOSE 8080
 
