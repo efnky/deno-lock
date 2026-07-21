@@ -6,7 +6,7 @@ COPY deno.json ./
 
 COPY . .
 
-RUN deno install
+RUN deno install --frozen=false
 
 EXPOSE 8080
 
